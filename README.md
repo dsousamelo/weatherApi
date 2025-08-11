@@ -87,4 +87,12 @@ This API uses Redis to cache responses from the external weather API. This helps
 
 When a request is made for a location, the API first checks if the data is available in the Redis cache. If it is, the response is returned immediately from the cache (`Cache hit`). Otherwise, the request is made to the external API, and the response is then stored in Redis for future requests (`Fetching from API...`). The cache expiration time is configurable via the `CACHE_EXPIRATION` environment variable.
 
+Origin / Reference
+This project is inspired by and adapted from the Weather API Wrapper Service project on roadmap.sh.
+
+Author
+Developed by Daniel de Sousa Melo
+
+
+
 
